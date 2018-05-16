@@ -16,9 +16,9 @@ def first_challenge
   }
 
   #your code here
-  contacts["Freddy Mercury"].each do |cat|
+  contacts["Freddy Mercury"].each do |cat, value|
     if cat == :favorite_icecream_flavors
-      :favorite_icecream_flavors.each do |flavor|   
+      value.each do |flavor|   
         if flavor == "strawberry"
           flavor.delete
         end  
