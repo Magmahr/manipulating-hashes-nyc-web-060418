@@ -8,8 +8,5 @@ def second_challenge
 
   #code your solution here!
   group = []
-  groceries.collect do |k,v|
-    group << v
-  end  
-  group.flatten
+  groceries.values.flatten
 end
