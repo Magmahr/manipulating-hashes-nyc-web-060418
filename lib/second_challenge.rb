@@ -10,6 +10,7 @@ def second_challenge
   
   groceries.collect do |k,v|
     group = v
+    group.flatten
   end  
-  group.flatten
+  
 end
