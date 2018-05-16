@@ -1,3 +1,4 @@
+require 'pry'
 def first_challenge
   contacts = {
     "Jon Snow" => {
@@ -18,6 +19,7 @@ def first_challenge
     if cat == :favorite_icecream_flavors
       :favorite_icecream_flavors.each do |flavors|   
         :favorite_icecream_flavors.delete_if {|flavors| flavors == "strawberry"}
+        binding.pry
       end  
     end  
   end
